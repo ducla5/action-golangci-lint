@@ -1,4 +1,4 @@
-FROM golangci/golangci-lint:v1.23-alpine
+FROM golangci/golangci-lint:v1.28-alpine
 
 RUN wget -O - -q https://raw.githubusercontent.com/ducla5/reviewdog/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v0.9.18
 
